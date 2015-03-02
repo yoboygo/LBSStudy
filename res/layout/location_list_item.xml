@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/list_item_code"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/location_site_error_code" />
+    
+    <RelativeLayout 
+        android:gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:id="@+id/list_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_title"
+            android:textSize="@dimen/list_item_title"
+            />
+        <TextView 
+            android:id="@+id/list_item_time"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_site_time"
+            android:textSize="@dimen/list_item_time"
+            />
+        
+        <TextView 
+            android:id="@+id/list_tiem_latitude"
+            android:layout_below="@id/list_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_site_latitude"
+            />
+        
+        <TextView 
+            android:id="@+id/list_tiem_lontitude"
+            android:layout_below="@id/list_item_title"
+            android:layout_toRightOf="@id/list_tiem_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_site_lontitude"
+            />
+        
+        <TextView 
+            android:id="@+id/list_tiem_radius"
+            android:layout_below="@id/list_item_title"
+            android:layout_toRightOf="@id/list_tiem_lontitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_site_radius"
+            />
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>
