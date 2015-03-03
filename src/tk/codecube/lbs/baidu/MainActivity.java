@@ -53,6 +53,7 @@ public class MainActivity extends Activity {
 				switch(position)
 				{
 					case 0:targetClass = LocationActivity.class;break;
+					case 1:targetClass = EagleEyeActivity.class;break;
 					default:targetClass = LocationActivity.class;break;
 				}
 				
@@ -70,7 +71,8 @@ public class MainActivity extends Activity {
 	public List<String> getListValues()
 	{
 		List<String> listValues = new ArrayList<String>();
-		listValues.add("LOCATION");
+		listValues.add("定位");
+		listValues.add("鹰眼");
 		return listValues;
 	}
 }

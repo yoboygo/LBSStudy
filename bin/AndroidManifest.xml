@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="20" />
 
     <!-- 这个权限用于进行网络定位 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
@@ -69,11 +69,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-<!--         定位Actiovity -->
+
+        <!-- 定位Actiovity -->
         <activity
-            android:name="tk.codecube.lbs.baidu.lbs.LocationActivity"
+            android:name=".lbs.LocationActivity"
             android:label="@string/title_activity_location" >
+        </activity>
+        <activity
+            android:name=".EagleEyeActivity"
+            android:label="@string/title_activity_eagle_eye" >
         </activity>
     </application>
 

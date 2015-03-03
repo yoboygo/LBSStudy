@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<!--     gloable string key -->
+    <!-- gloable string key -->
     <string name="product_name">AimyLBS</string>
-    
     <string name="app_name">LBSBaseBaidu</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -12,8 +11,8 @@
     <string name="main_title">MY LBS TEST</string>
     <string name="title_activity_location">LocationActivity</string>
 
-	<!--     location starting -->
-	<string name="location_btn_start">START</string>
+    <!-- location starting -->
+    <string name="location_btn_start">START</string>
     <string name="location_title">LocationActivity</string>
     <string name="location_btn_state_stop">STOP</string>
     <string name="location_site_error_code">ERROR_CODE</string>
@@ -22,5 +21,6 @@
     <string name="location_site_latitude">LATITUDE</string>
     <string name="location_site_lontitude">LONTITUDE</string>
     <string name="location_site_radius">RADIUS</string>
-    
+    <string name="title_activity_eagle_eye">EagleEyeActivity</string>
+
 </resources>
