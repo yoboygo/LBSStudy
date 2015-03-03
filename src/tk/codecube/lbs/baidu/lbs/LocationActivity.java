@@ -21,6 +21,8 @@ import com.baidu.location.BDGeofence;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.baidu.location.LocationClientOption.LocationMode;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
 
 public class LocationActivity extends Activity {
 
@@ -30,18 +32,21 @@ public class LocationActivity extends Activity {
 	private LocationMode locationMode = LocationMode.Hight_Accuracy;
 	private String coorType = BDGeofence.COORD_TYPE_GCJ;//"gcj02";//国测局加密经纬度坐标;bd09II:百度加密经纬度坐标;bd09:百度加密墨卡托
 	
+	@ViewInject(R.id.location_btn_start)
 	private Button locationBtnStart;
-	
+	@ViewInject(R.id.location_tesult)
 	private ListView resultView;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_location);
+		ViewUtils.inject(this);
+		
 		LocationApplication locationApplication = (LocationApplication)super.getApplication();
 		//get the locationClient
 		this.locationClient = locationApplication.getLbsClient();
-		this.resultView = (ListView) findViewById(R.id.location_tesult);
+//		this.resultView = (ListView) findViewById(R.id.location_tesult);
 		
 		//初始化ListView and item
 		String[] itemContent = new String[]{
@@ -66,7 +71,7 @@ public class LocationActivity extends Activity {
 		this.locationClient.registerLocationListener(locaLBSListener);
 		
 		//button start
-		locationBtnStart = (Button) findViewById(R.id.location_btn_start);
+		//locationBtnStart = (Button) findViewById(R.id.location_btn_start);
 		locationBtnStart.setOnClickListener(new View.OnClickListener() {
 			
 			@Override

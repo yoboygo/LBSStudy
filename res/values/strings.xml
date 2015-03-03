@@ -2,25 +2,25 @@
 <resources>
 
     <!-- gloable string key -->
-    <string name="product_name">AimyLBS</string>
-    <string name="app_name">LBSBaseBaidu</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="product_name" translatable="false" >AimyLBS</string>
+    <string name="app_name" translatable="false" >LBSBaseBaidu</string>
+    <string name="hello_world" translatable="false" >Hello world!</string>
+    <string name="action_settings" translatable="false" >Settings</string>
 
     <!-- main starting -->
-    <string name="main_title">MY LBS TEST</string>
-    <string name="title_activity_location">LocationActivity</string>
+    <string name="main_title" translatable="false" >MY LBS TEST</string>
+    <string name="title_activity_location" translatable="false" >LocationActivity</string>
 
     <!-- location starting -->
-    <string name="location_btn_start">START</string>
-    <string name="location_title">LocationActivity</string>
-    <string name="location_btn_state_stop">STOP</string>
-    <string name="location_site_error_code">ERROR_CODE</string>
-    <string name="location_site_addr">ADDR</string>
-    <string name="location_site_time">TIME</string>
-    <string name="location_site_latitude">LATITUDE</string>
-    <string name="location_site_lontitude">LONTITUDE</string>
-    <string name="location_site_radius">RADIUS</string>
-    <string name="title_activity_eagle_eye">EagleEyeActivity</string>
+    <string name="location_btn_start" translatable="false" >START</string>
+    <string name="location_title" translatable="false" >LocationActivity</string>
+    <string name="location_btn_state_stop" translatable="false" >STOP</string>
+    <string name="location_site_error_code" translatable="false" >ERROR_CODE</string>
+    <string name="location_site_addr" translatable="false" >ADDR</string>
+    <string name="location_site_time" translatable="false" >TIME</string>
+    <string name="location_site_latitude" translatable="false" >LATITUDE</string>
+    <string name="location_site_lontitude" translatable="false" >LONTITUDE</string>
+    <string name="location_site_radius" translatable="false" >RADIUS</string>
+    <string name="title_activity_eagle_eye" translatable="false" >EagleEyeActivity</string>
 
 </resources>

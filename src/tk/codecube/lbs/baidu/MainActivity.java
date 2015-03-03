@@ -3,6 +3,9 @@ package tk.codecube.lbs.baidu;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+
 import tk.codecube.lbs.baidu.lbs.LocationActivity;
 import android.app.Activity;
 import android.content.Intent;
@@ -20,6 +23,7 @@ public class MainActivity extends Activity {
 	/**
 	 * Main LlistView
 	 */
+	@ViewInject(R.id.main_lsit)
 	private ListView mainListView;
 	
 	
@@ -30,9 +34,10 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		ViewUtils.inject(this);
 		
 		//Main ListView Object
-		mainListView = (ListView) findViewById(R.id.main_lsit);
+//		mainListView = (ListView) findViewById(R.id.main_lsit);
 		ListAdapter mainListAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,getListValues());
 		mainListView.setAdapter(mainListAdapter);
 		
